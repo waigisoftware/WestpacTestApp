@@ -53,7 +53,7 @@
     self.title = @"News";
     
     // add refresh button
-    UIBarButtonItem *refreshItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(fetchData)];
+    UIBarButtonItem *refreshItem = [[UIBarButtonItem alloc] initWithTitle:@"Refresh" style:UIBarButtonItemStylePlain target:self action:@selector(fetchData)];
     self.navigationItem.leftBarButtonItem = refreshItem;
     [refreshItem autorelease];
     
