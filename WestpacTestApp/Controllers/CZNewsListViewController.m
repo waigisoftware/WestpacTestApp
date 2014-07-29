@@ -67,7 +67,7 @@
     if (iOS7) {
         _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height + frame.origin.y - 64)];
     } else {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height + frame.origin.y - 44)];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height + frame.origin.y)];
     }
     _tableView.opaque = YES; // make sure it's set to opaque = YES for better performance
     _tableView.dataSource = self;

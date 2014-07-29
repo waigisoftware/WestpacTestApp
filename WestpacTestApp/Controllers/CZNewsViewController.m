@@ -33,7 +33,7 @@
     // set title
     self.title = self.newsTitle;
     
-    CGRect frame = [self.view bounds];
+    CGRect frame = [self.view frame];
     
     // create web view to show news
     _webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height + frame.origin.y)];
@@ -53,7 +53,7 @@
 }
 
 - (void)setupUI {
-    CGRect frame = [self.view bounds];
+    CGRect frame = [self.view frame];
     _activityIndicator.center = CGPointMake(frame.size.width / 2, frame.size.height / 2);
     _webView.frame = CGRectMake(0, 0, frame.size.width, frame.size.height + frame.origin.y);
 }
